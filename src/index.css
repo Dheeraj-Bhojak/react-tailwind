@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap");
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.campaignSingleImage {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.borderRadiusHalfRound {
+  border-radius: 10px 100px/120px;
+}
+
+.borderRadiusHalfRoundReverse {
+  border-radius: 150px 10px/180px;
+}
+.box {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.img-preview {
+  overflow: hidden;
+}
+
+#socialTabs::-webkit-scrollbar {
+  height: 4px; /* Adjust as needed */
+}
+
+#socialTabs::-webkit-scrollbar-track {
+  background: transparent; /* Hide the scrollbar track */
+}
+
+#socialTabs::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners of the thumb */
+}
+
+.caveat-cursive {
+  font-family: "Caveat", cursive;
+}
+
+.ri-shadow {
+  box-shadow: 10px 10px 25px grey;
+}
+.element-img {
+  width: 100px;
+  height: 100px;
+  animation: moveUpDown 3s ease-in-out infinite alternate;
+}
+.fill-gradient-instagram {
+  color: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.gradientBg {
+  background: (0deg, rgb(0, 0, 0) 28.96%, rgba(0, 0, 0, 0) 100%);
+  min-height: 130px;
+  z-index: 50;
+}
+#grad1 {
+  min-height: 130px;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 100%)
+  );
+}
+.font-archivo {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.hover-underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fdc100;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.hover-underline:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.header-search {
+  display: flex;
+}
+
+.header-search div:nth-child(1) select {
+  border: none;
+  background-color: #f1f1f1;
+  font-family: "AmazonEmber";
+  height: 32px;
+  border-radius: 4px 0 0 4px;
+  padding: 0 0.5rem;
+}
+
+.header-search div:nth-child(2) input {
+  padding: 0 0.3rem;
+  width: 100%;
+  height: 32px;
+  border: none;
+  font-family: "AmazonEmber";
+}
+
+.header-search div:nth-child(2) input:focus {
+  outline: none;
+}
+
+.header-search div:nth-child(3) {
+  cursor: pointer;
+  height: 40px;
+}
+
+.header-search div:nth-child(3) button {
+  height: 32px;
+  width: 32px;
+  background-color: #fdc100;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.rotate-bg-img {
+  animation: spin 10s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Adjust this as needed */
+  z-index: -1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* for influencer profile */
+.selected-link {
+  background-color: #36454f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.selected-link-navbar {
+  border-bottom: 4px #fdc100 solid;
+}
+
+/* new */
+
+.table-cell-gap {
+  margin-right: 10px; /* Adjust the margin to your preference */
+}
+
+.funnel-chart-container .rfp-funnel-chart .rfp-funnel-chart__stage {
+  height: 20px !important; /* Adjust the height as needed */
+}
+@media only screen and (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #7f9cf5; /* Change this color to your desired color */
+}
+
+.vertical-border {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+.table-heading {
+  color: #909aaa;
+  font-weight: 600;
+  border-bottom: 1px solid #d9d9d9;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.table-row-border {
+  border-bottom: 1px solid #d9d9d9;
+}

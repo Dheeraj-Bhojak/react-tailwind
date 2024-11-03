@@ -1,0 +1,34 @@
+// //blogPaginationStyle.scss
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.paginationLink {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.paginationLink:hover {
+  background-color: #f0f0f0;
+}
+
+.paginationDisabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.paginationActive {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+

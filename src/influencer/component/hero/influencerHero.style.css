@@ -1,0 +1,111 @@
+@keyframes example {
+  0%,
+  33% {
+    left: 310px;
+    top: 30px;
+  }
+  36%,
+  66% {
+    left: 310px;
+    top: 60px;
+  }
+  70%,
+  100% {
+    left: 310px;
+    top: 90px;
+  }
+}
+
+.rotate-list {
+  background-color: rgb(255, 251, 0);
+  z-index: -1;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.buttonfx {
+  color: white; /* button text color */
+  outline: none;
+  background: transparent;
+  border: none;
+  border: 1px solid #eee;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font: bold 16px "Bitter", sans-serif; /* use google font */
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.buttonfx:before,
+.buttonfx:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #feea3a; /* onhover background color */
+  z-index: -1;
+  border: none;
+  /* move elements above button so they don't appear initially */
+  transition: all 0.5s;
+}
+
+.buttonfx:before {
+  background: none; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0, 0, 0);
+}
+
+.buttonfx:hover {
+  color: black;
+}
+
+.buttonfx:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}
+
+/* #### Bounce classes #### */
+
+.bouncein:hover:before,
+.bouncein:hover:after {
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66) !important;
+}
+
+/* //// Slide Corner  //// */
+
+.slidebottomleft:after {
+  transform: translate3D(-100%, 100%, 0);
+}
+
+.slidebottomleft:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}
+/* //// Slide Left  //// */
+
+.slideleft:after {
+  top: 0;
+  z-index: -1;
+  transform: translate3D(-101%, 0, 0);
+}
+
+.slideleft:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}

@@ -1,0 +1,26 @@
+#pricingTable td:nth-child(3) {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #fdc100;
+}
+
+#pricingTable:nth-child(1) td:nth-child(3) {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: #f3c83c;
+  border: none;
+  border-color: #fdc100;
+  padding: 6px;
+}
+#pricingTable:last-child td:nth-child(3) {
+  border-bottom: 2px solid;
+  border-color: #fdc100;
+}
+#pricingTable:nth-child(2) td:nth-child(3) div {
+  border: none;
+  border-bottom: 2px solid;
+}
+
+#pricingTable:first-child tr {
+  border: none;
+}

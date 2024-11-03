@@ -1,0 +1,29 @@
+.left-bg-animation {
+  position: relative;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  33% {
+    left: 200px;
+    top: 0px;
+  }
+  67% {
+    left: 100px;
+    top: 20px;
+  }
+  100% {
+    left: -2px;
+    top: 0px;
+  }
+}
+
+.text-family-cap {
+  font-family: "Capriola", sans-serif;
+}

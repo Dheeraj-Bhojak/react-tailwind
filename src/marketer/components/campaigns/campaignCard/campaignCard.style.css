@@ -1,0 +1,26 @@
+.transition_ease {
+  transition: 0.5s ease;
+}
+.transition-effect:hover .image-overlay {
+  cursor: pointer;
+
+  @media (min-width: 276px) {
+    height: 385px;
+  }
+}
+.transition-effect:hover .company-logo {
+  left: 16px;
+}
+.transition_text {
+  position: relative;
+  top: 30%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
